@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+.place {
+  width: 45%;
+  float: left;
+  padding: 2.5%;
+  margin-top: 20px;
+}

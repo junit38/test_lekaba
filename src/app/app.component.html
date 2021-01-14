@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="app-search">
+  Résultats trouvé pour
+  <input id="search" type="text"
+          [(ngModel)]="search">
+</div>
+<div class="app-places">
+  <div class="place" *ngFor="let place of filter(data)">
+    <div class="place-img" [ngStyle]="{'background': 'url(' + place.imgs[0] +')'}"></div>
+    <div class="place-content">
+      <h4>{{ place.name }}</h4>
+      <p>{{ place.address }}</p>
+    </div>
+  </div>
+</div>
+<div class="app-map">
+  <div #gmap style="width:50%;height:400px"></div>
+</div>
+
